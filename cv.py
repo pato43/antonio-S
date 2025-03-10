@@ -27,7 +27,7 @@ tabs = st.tabs(["Perfil", "Experiencia", "Educación", "Habilidades", "Proyectos
 with tabs[0]:  # Perfil
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://via.placeholder.com/150", width=150)  # Foto de perfil
+        st.image("https://via.placeholder.com/200", width=200)  # Foto de perfil
     with col2:
         st.write(
             "Economista y Matemático con experiencia en Finanzas, Econometría y Ciencia de Datos. He trabajado en \n"
@@ -35,7 +35,14 @@ with tabs[0]:  # Perfil
         )
         st.metric(label="Años de Experiencia", value="5+")
         st_lottie(lottie_coding, height=200)
-
+    
+    st.markdown("---")
+    st.subheader("📌 Áreas de especialización")
+    st.write("✔️ Finanzas Cuantitativas")
+    st.write("✔️ Modelado Estadístico y Machine Learning")
+    st.write("✔️ Desarrollo de soluciones basadas en IA")
+    st.write("✔️ Creación de plataformas tecnológicas")
+    
 with tabs[1]:  # Experiencia
     st.subheader("Experiencia Laboral")
     with st.expander("📌 Freelancer en Machine Learning"):
@@ -64,7 +71,11 @@ with tabs[4]:  # Proyectos
     st.write("- 🚀 Desarrollo de plataformas tecnológicas basadas en IA/ML.")
     st.write("- 📊 Creación de aplicaciones web y visualización de datos con Looker Studio.")
     st.write("- 📈 Modelos predictivos para análisis financiero y econométrico.")
+    st.markdown("---")
     
+    st.subheader("📂 Repositorios de Código")
+    st.write("🔗 [GitHub: Machine Learning Projects](https://github.com)")
+    st.write("🔗 [GitHub: Data Science Portfolio](https://github.com)")
 
 with tabs[5]:  # Certificaciones
     st.subheader("Certificaciones")
